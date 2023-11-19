@@ -1,7 +1,7 @@
 # Voso - Video Streaming Service.
 Voso is a video streaming service that allows users to watch their favourite series or movies.
 ## Try it online
-https://voso.rf.gd/
+Explore the live version of Voso at [voso.rf.gd](https://voso.rf.gd/).
 ## Features
 - Everything is integrated with database!
 - User authentication: users can create an account, log in, and log out
@@ -30,7 +30,7 @@ https://voso.rf.gd/
 ![App Screenshot](https://i.postimg.cc/xd5w3DdM/db.png)
 ## License
 
-Copyright 2023 Olaf Wojda
+Copyright 2023 Olfu
 
 This project is for educational purposes only and is provided as-is, without any express or implied warranty. The author of this project does not grant permission for its use beyond educational purposes.
 
