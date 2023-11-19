@@ -30,7 +30,7 @@ Explore the live version of Voso at [voso.rf.gd](https://voso.rf.gd/).
 ![App Screenshot](https://i.postimg.cc/xd5w3DdM/db.png)
 ## License
 
-Copyright 2023 Olfu
+Copyright 2023 Olaf Wojda
 
 This project is for educational purposes only and is provided as-is, without any express or implied warranty. The author of this project does not grant permission for its use beyond educational purposes.
 
