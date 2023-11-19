@@ -1,0 +1,277 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+}
+.user-card,
+.info,
+.stats,
+.settings {
+  background-color: var(--bg2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.user-card{
+  margin-top: 10px;
+}
+.background {
+  background-color: #202020;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px 5px 0 0;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+  user-select: none;
+}
+.avatar-nickname {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  padding: 20px 50px 20px 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+}
+.avatar-nickname a {
+  text-decoration: none;
+  color: white;
+}
+.avatar {
+  border: 5px solid white;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  object-fit: cover;
+  user-select: none;
+}
+.mal {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #2e51a2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.mal img {
+  width: 30px;
+  border-radius: 5px;
+}
+
+.description {
+  padding: 20px 50px;
+}
+.user-info {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.info,
+.stats,
+.settings {
+  margin-top: 20px;
+  padding: 20px 50px 30px 50px;
+  width: 33.33%;
+}
+
+.info h2,
+.stats h2,
+.settings h2 {
+  font-weight: normal;
+  text-align: center;
+}
+.settings a {
+  text-decoration: none;
+  color: white;
+}
+.settings-wrapper {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.option {
+  background-color: #242424;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.removeaccount {
+  background-color: transparent;
+  color: var(--accent1) !important;
+}
+.stats-data {
+  color: var(--accent1);
+  float: right;
+}
+.form-popup-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-container {
+  background-color: var(--bg1);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 40px;
+  color: #fff;
+}
+.form-container h1 {
+  margin: 10px 0 5px 0;
+}
+.form-container form .form-group-title {
+  display: inline-block;
+  margin-top: 20px;
+}
+.form-container form button {
+  width: 100%;
+  background-color: var(--accent1);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.form-container form input[type="password"],
+.form-container form input[type="text"] {
+  resize: none;
+  font-family: inherit;
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+.form-container #btnCloseForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.form-popup-bg:before {
+  content: "";
+  background-color: #fff;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#new-error,
+#renew-error {
+  color: red;
+  font-size: 14px;
+}
+.mal {
+  display: none;
+}
+@media screen and (max-width: 1366px) {
+  .main {
+    font-size: 16px;
+  }
+  .avatar{
+    width: 150px;
+    top: -75px;
+  }
+  .avatar-nickname{
+    padding-left: 220px;
+    padding-top: 0;
+    font-size: 28px;
+  }
+  .description {
+    padding-top: 10px;
+  }
+  .info, .stats, .settings {
+    padding: 10px 30px 20px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .background {
+    height: 150px;
+  }
+  .avatar {
+    width: 120px;
+    top: -60px;
+    left: 25px;
+  }
+  .avatar-nickname {
+    height: 80px;
+    padding: 20px 0 65px 160px;
+    font-size: 20px;
+  }
+  .nickname {
+    width: 150px;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  .description {
+    padding: 0 25px 15px 25px;
+    font-size: 14px;
+  }
+  .mal {
+    display: none;
+  }
+  .user-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .info,
+  .stats,
+  .settings {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+  }
+  .form-container {
+    max-width: 90vw;
+  }
+  #changepas-form button,
+  #rmvacc-form button {
+    height: 40px;
+  }
+}

@@ -1,0 +1,200 @@
+.browse-item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg2);
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  transition: 0.2s;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  margin: 10px 5px;
+}
+.browse-item:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}
+.browse-item img {
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 5px 5px 0 0;
+}
+.episode:hover > img {
+  filter: opacity(0.5);
+}
+.hover-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  font-size: 60px;
+}
+.browse-item:hover > .hover-icon {
+  display: flex;
+}
+.browse-item-numinfo {
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  padding: 2px 5px;
+  background-color: rgba(var(--accentRGB), 0.83);
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.gray {
+  background-color: rgba(var(--bg2RGB), 0.83);
+}
+.browse-item p {
+  width: 95%;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 2;
+  text-overflow: ellipsis;
+}
+.browse-section {
+  display: flex;
+  width: 100%;
+}
+.browse-section .slick-track {
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+h1 a{
+  color: inherit;
+  text-decoration: inherit;
+  position: relative;
+}
+
+.action-link i {
+  opacity: 0;
+  transition: opacity 0.1s ease, transform 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.action-link:hover i {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slick-prev,
+.slick-next {
+  width: 50px !important;
+  height: 100% !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 50px !important;
+}
+
+.slick-prev:before {
+  font-family: "Material Design Icons" !important;
+  content: "\F0141" !important;
+}
+
+.slick-next:before {
+  font-family: "Material Design Icons" !important;
+  content: "\F0142" !important;
+}
+@media screen and (max-width: 1366px) {
+  .main {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .action-link i{
+    font-size: 18px;
+  }
+  .browse-item p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .slick-prev {
+    left: -25px !important;
+  }
+  .slick-next {
+    right: -25px !important;
+  }
+  .browse-section {
+    margin-left: 0;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0 !important;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .browse-item p {
+    font-size: 18px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 25px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    overflow-x: initial;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+  .browse-section {
+    width: 100%;
+    overflow-x: scroll;
+    justify-content: normal;
+    column-gap: 10%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .browse-section::-webkit-scrollbar {
+    display: none;
+  }
+  .browse-item {
+    width: 55vw;
+  }
+  .browse-item p {
+    font-size: 20px;
+    margin: 0 3%;
+    height: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .browse-item:hover {
+    transform: none;
+    backface-visibility: visible;
+  }
+}

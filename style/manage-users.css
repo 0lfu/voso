@@ -1,0 +1,62 @@
+.users-section > table {
+  margin: 20px 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+.users-row {
+  border-bottom: 1px solid var(--bg1);
+}
+.users-row a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.users-header {
+  background-color: var(--accent1);
+  border-radius: 5px 5px 0 0;
+}
+.users-header th:first-of-type{
+  border-radius: 5px 0 0 0;
+}
+.users-header th:last-of-type{
+  border-radius: 0 5px 0 0;
+}
+tr {
+  background-color: var(--bg2);
+}
+.users_id,
+.users_role,
+.users_reason {
+  max-width: 10%;
+}
+.users_actions {
+  padding: 5px;
+  max-width: 15%;
+  align-items: center;
+}
+.actions {
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.actions-header {
+  text-align: center;
+}
+.no-banned{
+  padding: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    font-size: 20px;
+  }
+  .browse-section .fas {
+    font-size: 35px;
+  }
+}

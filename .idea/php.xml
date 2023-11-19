@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/norkunas/youtube-dl-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/loilo/fuse" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/google-api/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/google-api/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/google-api/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/google-api/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/google-api/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/google-api/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/google-api/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/google-api/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/google-api/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/google-api/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/google-api/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/google-api/vendor/composer" />
+      <path value="$PROJECT_DIR$/google-api/vendor/ralouphie/getallheaders" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/google-api/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>

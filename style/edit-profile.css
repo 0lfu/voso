@@ -1,0 +1,163 @@
+.edit-profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+}
+.user-card {
+  background-color: var(--bg2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.background {
+  background-color: #202020;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 5px 0 0;
+}
+.avatar-nickname {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  padding: 20px 50px 20px 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 36px;
+}
+.avatar-nickname a {
+  text-decoration: none;
+  color: white;
+}
+.avatar-edit {
+  border: 5px solid white;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 15px;
+  position: absolute;
+  top: -100px;
+  left: 50px;
+}
+
+.nickname-edit,
+.avatar-url,
+.background-url {
+  height: 100%;
+  background-color: #202020;
+  color: white;
+  border: none;
+  padding: 0 15px;
+  font-size: 30px;
+  border-radius: 10px;
+  outline: none;
+  font-family: inherit;
+}
+.avatar-background-urls {
+  width: 100%;
+  height: 90px;
+  padding: 15px 50px;
+  display: flex;
+  gap: 15px;
+}
+.avatar-url,
+.background-url {
+  width: 100%;
+  font-size: 20px;
+}
+
+.input-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.input-container p {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.description-area {
+  padding: 15px;
+  width: 100%;
+  height: 300px;
+  color: white;
+  background-color: #202020;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.description {
+  padding: 5px 50px;
+}
+
+.charCountElement {
+  font-size: 18px;
+  padding: 5px;
+}
+
+#save-changes {
+  margin-top: 10px;
+  background-color: var(--accent1);
+  border: 1px solid #303030;
+  color: white;
+  font-size: 24px;
+  font-family: inherit;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    height: 150px;
+  }
+  .avatar-edit {
+    width: 120px;
+    top: -60px;
+    left: 25px;
+  }
+  .avatar-nickname {
+    height: 80px;
+    padding: 0;
+  }
+  .nickname-edit {
+    width: 165px;
+    margin-left: auto;
+    margin-right: 15px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .description {
+    padding: 0 15px 15px 15px;
+    font-size: 14px;
+  }
+  .user-info {
+    flex-direction: column;
+    gap: 0;
+  }
+  .info,
+  .stats,
+  .settings {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 10px;
+  }
+  .avatar-background-urls {
+    padding: 15px;
+  }
+}

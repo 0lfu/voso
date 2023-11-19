@@ -1,0 +1,82 @@
+.main h1 {
+    margin-bottom: 1%;
+}
+.top-section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.top-block{
+    width: 33.33%;
+    background-color: var(--bg2);
+    border-radius: 5px;
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-block h3{
+    margin: 10px 0;
+}
+.episodes {
+    width: 100%;
+}
+.episodes a {
+    color: inherit;
+    text-decoration: none;
+}
+.episodes a:hover > .episode {
+    background-color: #242424;
+    transition: 0.2s;
+}
+.episode {
+    background-color: #202020;
+    border-radius: 3px;
+    margin: 5px 0;
+    /* padding: 5px 10px; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.epNum {
+    background-color: var(--accent1);
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.epTitle{
+    white-space: nowrap;
+    width: 330px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.no-episodes {
+    text-align: center;
+    padding: 8%;
+}
+@media screen and (max-width: 1024px) {
+    .top-section {
+        flex-wrap: wrap;
+    }
+    .top-block{
+        height: auto;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .top-section {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}

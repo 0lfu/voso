@@ -1,0 +1,88 @@
+.ptw-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2%;
+  gap: 20px;
+  min-height: 70vh;
+}
+.ptw-section a {
+  flex-basis: calc(25% - 15px);
+  min-width: 300px;
+  text-decoration: none;
+  color: white;
+}
+.ptw-item {
+  background-color: var(--bg2);
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  transition: 0.2s;
+}
+.ptw-item:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}
+.ptw-item p {
+  width: 95%;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-bottom: 5px;
+}
+.ptw-item img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left;
+}
+.ptw-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ptw-data p {
+  text-overflow: ellipsis;
+}
+.badge {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  padding: 2px 5px;
+  background-color: rgba(var(--bg2RGB), 0.83);
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+.no-watchlist{
+  padding: 20px;
+}
+@media screen and (max-width: 1366px) {
+  .ptw-section a {
+    flex-basis: calc(33.33% - 15px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ptw-section a {
+    flex-basis: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .ptw-section {
+    justify-content: center;
+  }
+  .ptw-section a {
+    flex-basis: 100%;
+  }
+  .ptw-data p {
+    white-space: normal;
+  }
+}

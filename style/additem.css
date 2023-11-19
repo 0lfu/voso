@@ -1,0 +1,206 @@
+.main{
+  min-height: unset!important;
+}
+.add-series-button,
+.add-episode-button,
+.add-many-button {
+  width: 33.33%;
+  font-size: 1em;
+  padding: 1% 2%;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.add-series-form,
+.add-episode-form,
+.add-many-form {
+  padding: 25px;
+  width: 100%;
+}
+.add-series-form {
+  display: block;
+  border-radius: 0 10px 10px 10px;
+}
+.add-episode-form,
+.add-many-form {
+  display: none;
+  border-radius: 10px 0 10px 10px;
+}
+.add-episode-form{
+  border-radius: 10px 10px 10px 10px;
+}
+h3 {
+  font-size: 24px;
+}
+.active {
+  background-color: var(--bg2);
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-item label:first-child {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.form-item input,
+.form-item select,
+.form-item textarea {
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+  border: 1px solid var(--accent1);
+}
+.multiselect-dropdown {
+  border-radius: 5px !important;
+}
+.multiselect-dropdown-list-wrapper {
+  border-radius: 5px 5px 0 0 !important;
+}
+.submit {
+  width: 90%;
+}
+.reset {
+  width: 10%;
+}
+.form-controls {
+  margin-top: 20px;
+}
+.form-item textarea {
+  resize: none;
+}
+.form-item input[type="submit"] {
+  background-color: var(--accent1);
+}
+.regenerate-seriesID-button,
+.regenerate-episodeID-button {
+  font-size: 24px !important;
+  margin-left: 15px;
+}
+.error {
+  font-size: 14px;
+  color: var(--accent1);
+}
+/* series form fields styling */
+.id {
+  width: 15%;
+}
+.altname {
+  width: 85%;
+}
+.fullname,
+.genre,
+.desc {
+  width: 100%;
+}
+.season,
+.epcount,
+.brdtype,
+.brdstart,
+.brdend {
+  width: 20%;
+}
+.poster {
+  width: 20%;
+}
+.tags {
+  width: 80%;
+}
+/* episode form fields styling */
+.series {
+  width: 85%;
+}
+.ep-title {
+  width: 80%;
+}
+.ep-number {
+  width: 20%;
+}
+.ep-url {
+  width: 60%;
+}
+.ep-url2,
+.ep-url3 {
+  width: 50%;
+}
+.ep-poster {
+  width: 40%;
+}
+.intro-start,
+.intro-end {
+  width: 10%;
+}
+.isVisible {
+  margin-left: auto;
+}
+.isVisible label {
+  padding-left: 0 !important;
+}
+#intro-min {
+  text-align: right;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type="checkbox"] {
+  filter: grayscale(100%);
+}
+/* many form fields styling */
+.add-many-form .series{
+  width: 100%;
+}
+.videolinks,
+.thumbnailinks,
+.titles{
+  width: 33.33%;
+  height: 50vh;
+}
+.videolinks textarea,
+.thumbnailinks textarea,
+.titles textarea{
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 26px;
+    padding: 5px;
+  }
+  .form-item input,
+  .form-item select,
+  .form-item textarea {
+    font-size: 12px;
+    padding: 6px;
+    width: 100%;
+    border-radius: 3px;
+  }
+  .form-item label:first-child {
+    font-size: 20px;
+    padding-left: 5px;
+    white-space: nowrap;
+  }
+  .intro-start,
+  .intro-end {
+    width: 25%;
+  }
+}

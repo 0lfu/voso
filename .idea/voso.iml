@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/google-api/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/loilo/fuse" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/norkunas/youtube-dl-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

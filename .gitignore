@@ -1,0 +1,13 @@
+auth
+icons
+logo
+resources
+node_modules
+vendor
+youtube-dl
+.htaccess
+composer.json
+composer.lock
+package.json
+package-lock.json
+preview.png

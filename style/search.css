@@ -1,0 +1,105 @@
+.search-summary {
+  margin-bottom: 20px;
+}
+.search-section-series,
+.search-section-episodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.search-section-series {
+  min-height: 26vh; /* DON'T CHANGE */
+  margin-bottom: 40px;
+}
+.search-section-series a,
+.search-section-episodes a {
+  flex-basis: calc(25% - 16px);
+  min-width: 200px;
+  text-decoration: none;
+  color: white;
+}
+.search-item {
+  background-color: var(--bg2);
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+.search-item img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: left;
+}
+.item-data p,
+.item-data i {
+  width: 95%;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  text-overflow: ellipsis;
+}
+.search-section-episodes a .search-item .item-data p {
+  margin-top: 0;
+}
+.search-section-episodes a .search-item .item-data i {
+  margin-bottom: 0;
+}
+.item-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.noResults {
+  margin-top: 3%;
+}
+
+.badge {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  padding: 2px 5px;
+  background-color: rgba(var(--bg2RGB), 0.83);
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+@media screen and (max-width: 1366px) {
+  .search-section-series a, .search-section-episodes a {
+    flex-basis: calc(33.3% - 13px);
+  }
+}
+@media screen and (max-width: 500px) {
+  .search-section-series a, .search-section-episodes a {
+    flex-basis: 100%;
+  }
+  h2,
+  .noResults {
+    font-size: 27px;
+  }
+  .item-data p,
+  .item-data i {
+    white-space: normal;
+  }
+  .search-section-series,
+  .search-section-episodes {
+    padding-left: 10px;
+  }
+  .search-section-series a,
+  .search-section-episodes a {
+    min-width: 300px;
+  }
+}

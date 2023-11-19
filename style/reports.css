@@ -1,0 +1,72 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+.comment-row, .player-row {
+  border-bottom: 1px solid var(--bg1);
+}
+.comment-header, .player-header {
+  background-color: var(--accent1);
+  border-radius: 5px 5px 0 0;
+}
+.comment-header th:first-of-type, .player-header th:first-of-type{
+  border-radius: 5px 0 0 0;
+}
+.comment-header th:last-of-type, .player-header th:last-of-type{
+  border-radius: 0 5px 0 0;
+}
+tr {
+  background-color: var(--bg2);
+}
+.comment_repId,
+.comment_reason {
+  max-width: 5%;
+}
+.comment_reported,
+.comment_reportedBy {
+  max-width: 10%;
+}
+.comment_actions {
+  padding: 5px;
+  width: 15%;
+  align-items: center;
+}
+.actions {
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+.actions-header {
+  text-align: center;
+}
+.comment_reported a,
+.comment_reportedBy a,
+.player_id a,
+.player_name a
+ {
+  color: white;
+  text-decoration: none;
+}
+.episodes-section{
+  margin-bottom: 20px;
+}
+.episodes-section,
+.comments-section{
+  min-height: 35vh;
+  background-color: var(--bg2);
+  border-radius: 5px;
+}
+.no-reports{
+  padding: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,152 @@
+.edit-series-button,
+.edit-episode-button {
+  width: 50%;
+  font-size: 1em;
+  padding: 1% 2%;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.edit-series-form,
+.edit-episode-form {
+  width: 100%;
+}
+h3 {
+  font-size: 24px;
+}
+#form-editSeries, #form-editEpisode {
+  background-color: var(--bg2);
+  padding: 25px;
+  border-radius: 10px;
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-item label:first-child {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.form-item input,
+.form-item select,
+.form-item textarea,
+.cancel {
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+  border: 1px solid var(--accent1);
+}
+.submit {
+  width: 90%;
+}
+.cancel {
+  width: 10%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.form-controls {
+  margin-top: 20px;
+}
+.form-item textarea {
+  resize: none;
+}
+.multiselect-dropdown{
+  border-radius: 5px !important;
+}
+.form-item input[type="submit"] {
+  background-color: var(--accent1);
+}
+.regenerate-id-button {
+  font-size: 34px !important;
+  margin-left: 3%;
+}
+.error {
+  font-size: 14px;
+  color: var(--accent1);
+}
+/* series form fields styling */
+.id {
+  width: 15%;
+}
+.altname {
+  width: 85%;
+}
+.fullname,
+.genre,
+.desc {
+  width: 100%;
+}
+.season,
+.epcount,
+.brdtype,
+.brdstart,
+.brdend {
+  width: 20%;
+}
+.poster {
+  width: 20%;
+}
+.tags {
+  width: 80%;
+}
+/* episode form fields styling */
+.series {
+  width: 85%;
+}
+.ep-title{
+  width: 80%;
+}
+.ep-number{
+  width: 20%;
+}
+.ep-url{
+  width: 60%;
+}
+.ep-url2, .ep-url3{
+  width: 50%;
+}
+.ep-poster{
+  width: 40%;
+}
+.intro-start, .intro-end{
+  width: 10%;
+}
+.isVisible{
+  margin-left: auto;
+}
+.isVisible label{
+  padding-left: 0!important;
+}
+#intro-min{
+  text-align: right;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type=checkbox]{
+  filter: grayscale(100%);
+}
